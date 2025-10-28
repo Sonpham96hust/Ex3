@@ -12,7 +12,7 @@ export function createStore(reducer){
     const roots = new Map()
 
     function render(){
-        for (const [root, component] of consts)
+        for (const [root, component] of roots)
         {
             const output = component()
             root.innerHTML = output
